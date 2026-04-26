@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+h1 {
+    font-family: 'Bahnschrift Condensed';
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    height: 7%;
+    width: 100%;
+    /* backdrop-filter:  blur(5px); */
+    background-color: #ffffff;
+    z-index: 9999;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-area img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.logo-area h1 {
+    font-family: 'Bahnschrift Condensed';
+    color: #fff;
+    display: flex;
+}
+
+.geo {
+    font-size: 4rem;
+    color: #0B4827;
+    
+}
+
+.running {
+    font-size: 4rem;
+    color: #E9780F;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-container .video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.video-container .gradient{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#0B4827,#E9780F);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.patrocinadores {
+    position: absolute;
+    list-style: none;
+    z-index: 3;
+    right: 30px;
+    bottom: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow  ease;
+}
+
+.patrocinadores li:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+.patrocinadores img {
+    padding: 15px;
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+}
+
+.patrocinadores img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.video-section {
+    height: 100vh;
+    background: linear-gradient(#E9780F,#0B4827);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+
+.video-section .content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.text-area {
+    flex: 1;
+    color: #E9780F;
+}
+
+.peita {
+    color: white;
+    font-size: 40px;
+}
+
+.video-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.video-area video {
+    width: 100%;
+    max-width: 1280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+footer {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+
+
+
+
